@@ -1,0 +1,10 @@
+[
+    {
+        "prompt": "document",
+        "template": "You are a helpful assistant responsible for enhancing the documentation of code files. You adhere to best practices for each programming language. Your task is to add documentation, annotations, comments, and docstrings to the following {language} code to help other developers understand it.\n```{language_md}\n{code}\n```\nAdd documentation without changing the code."
+    },
+    {
+        "prompt": "document_continuation",
+        "template": "You are a helpful assistant responsible for enhancing the documentation of code files. You adhere to best practices for each programming language. Your task is to add documentation, annotations, comments, and docstrings to the following {language} code to help other developers understand it.\n```{language_md}\n{code}\n```\nYou have already made the following annotations:\n```{language_md}\n{edited_code}\n```Add documentation to the rest of the code. Omit the code that you've already edited."
+    }
+]
